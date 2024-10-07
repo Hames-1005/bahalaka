@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebLogin.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="authenticate.php" method="post" onsubmit="return validate()"> <!--sends data to a server-->
+        <label for="usermail">Email:</label>
+        <input type="email" id="usermail"><br><br>
+        <label for="passlog">Password: </label>
+        <input type="password" id="passlog"><br><br>
+        <button type="button" onclick="togglePasswordVisibility('passlog')">Show Password</button><br><br>
+        <button id="login">Login</button><br><br>
+        <a href="forgot-password.html">forgot password</a>
+        <a href="signup.html">sign-up</a><br>
+        <p id="alertlogin"></p>
+    </form>
+    <script src="WebValidation.js"></script>
+</body>
+</html>

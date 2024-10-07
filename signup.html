@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebLogin.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register-user.php" method="post" onsubmit="return signup()">
+        <label for="signupname">User Name: </label>
+        <input type="text" id="signupname"><br>
+        <label for="signupmail">Email Address: </label>
+        <input type="email" id="signupmail"><br>
+        <label for="passup">Password: </label>
+        <input type="password" id="passup"><br><br>
+        <button type="button" onclick="togglePasswordVisibility('passup')">Show Password</button><br>
+        <label for="conpassup">Confirm Password: </label>
+        <input type="password" id="conpassup"><br><br>
+        <button type="button" onclick="togglePasswordVisibility('conpassup')">Show Password</button>
+        <button id="buttonup">Sign-up</button><br>
+        <a href="login.html">Back to Login</a>
+        <p id="alertup"></p><br>
+    </form>
+    <script src="WebValidation.js"></script>
+</body>
+</html>
